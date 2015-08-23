@@ -10,9 +10,10 @@ var easyHTML = {
   },
   /* Makes a table. The first argument, topLabels, takes an array of values (any HTML elements, but usually just text) that
   will make up the labels at the top of the table. The second argument, rowData, takes an array of arrays, each array
-  containing the data that will make up one row of the table */
-  table: function(topLabels, rowData) {
-    var tbl = "<table><thead><tr>";
+  containing the data that will make up one row of the table. The last argument, id, takes a string, and it sets the table
+  to have that id*/
+  table: function(topLabels, rowData, id) {
+    var tbl = "<table id='" + id + "'><thead><tr>";
     for (var i = 0; i < topLabels.length; i++) {
       tbl += "<th>" + topLabels[i] + "</th>";
     }
