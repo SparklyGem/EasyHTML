@@ -7,7 +7,7 @@ var easyHTML = {
     btn.innerHTML = value;
     btn.addEventListener("click", event);
     btn.id = id;
-    if (appendToId) {
+    if (appendToId !== "undefined") {
       var appendId = document.getElementById(appendToId);
       appendId.appendChild(btn);
     } else {
