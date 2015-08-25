@@ -1,7 +1,7 @@
 var easyHTML = {
   /* Makes a button with a value (text, an image, or any HTML element), tells it what to do when it's clicked,
   gives it an id, and, optionally, tells it which id the button should be appended to. If left blank, button will
-  be appended to the body.*/
+  be appended to the body. The appendToId parameter currently doesn't work.*/
   button: function(value, event, id, appendToId) {
     var btn = document.createElement("button");
     btn.innerHTML = value;
