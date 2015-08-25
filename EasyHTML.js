@@ -11,7 +11,7 @@ var easyHTML = {
   /* Makes a table. The first argument, topLabels, takes an array of values (any HTML elements, but usually just text) that
   will make up the labels at the top of the table. The second argument, rowData, takes an array of arrays, each array
   containing the data that will make up one row of the table. The least argument is optional, and is the id to give the
-  table. [The id is currently not working] */
+  table.*/
   table: function(topLabels, rowData, id) {
     var tbl = "<table id=" + id + "><thead><tr>";
     for (var i = 0; i < topLabels.length; i++) {
